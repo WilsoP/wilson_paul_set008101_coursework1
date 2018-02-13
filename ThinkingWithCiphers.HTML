@@ -4,19 +4,25 @@
 <HEAD>
 	<TITLE> Thinking With Ciphers </TITLE>
 	<script type="text/javascript" src="Ceasers.js"></script>
-</HEAD>
+	<!--> <link rel="stylesheet" href="Design.css"> </!-->
+	</HEAD>
 
 <BODY>
-	<div id="CaesersInput">
-		<input type="text" id="CaesersInputString" value="Input String to Encrypt" />
-		<input type="number" id="CaesersStep" value="3" min="0" max="26"/>
-		<button type="button" onclick="Caesers()" id="CaesersEcode"> Encrypt </button>
+	<h1 id="heading">Now You're Thinking With Ciphers</h1>
+	<div id="caesarsInput">
+		<h3 id="caesarsHead"> Caesar's Cipher </h3>
+		<input type="text" id="caesarsInputString" value="Input String to Encrypt" />
+		<br></br>
+		<input type="number" id="caesarsStep" value="3" min="0" max="26"/>
+		<button type="button" onclick="caesars()" id="caesarsEcode"> Encrypt </button>
+		<button type="button" onclick="caesarsDecrypt()" id="CeasersUndo"> Decrypt </button>
+
 	</div>
 
-	<div id="CaesersOutputArea">
+	<div id="caesarsOutputArea" class="outputArea">
 		<p>
 			Below here is your coded message <br />
-			<div id="CaesersOutput"></div>
+			<div id="caesarsOutput"></div>
 		</p>
 	</div>
 </BODY>

@@ -1,0 +1,29 @@
+#heading {
+  background-color: #c4c8d1;
+  color: #37383a  ;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 25px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+#caesarsInput{
+    text-align: center;
+    margin: auto;
+}
+
+#ceasersInputString{
+  height: 50px;
+}
+
+#caesarsOutputArea{
+  text-align: center;
+}
+
+
+body{
+  background-color: #37383a;
+  font-family: "Times New Roman", Times, serif
+}
