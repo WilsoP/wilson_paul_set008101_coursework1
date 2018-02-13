@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <HTML>
+
 <HEAD>
 	<TITLE> Thinking With Ciphers </TITLE>
+	<script type="text/javascript" src="Ceasers.js"></script>
 </HEAD>
-<BODY>
 
+<BODY>
+	<div id="CaesersInput">
+		<input type="text" id="CaesersInputString" value="Input String to Encrypt" />
+		<input type="number" id="CaesersStep" value="3" min="0" max="26"/>
+		<button type="button" onclick="Caesers()" id="CaesersEcode"> Encrypt </button>
+	</div>
+
+	<div id="CaesersOutputArea">
+		<p>
+			Below here is your coded message <br />
+			<div id="CaesersOutput"></div>
+		</p>
+	</div>
 </BODY>
+
 </HTML>
