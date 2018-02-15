@@ -4,17 +4,20 @@
 <HEAD>
 	<TITLE> Thinking With Ciphers </TITLE>
 	<script type="text/javascript" src="Ceasers.js"></script>
-	<!--> <link rel="stylesheet" href="Design.css"> </!-->
-	</HEAD>
+	<script type="text/javascript" src="atBash.js"></script>
+	<!-->
+	<link rel="stylesheet" href="Design.css"> </!-->
+</HEAD>
 
 <BODY>
 	<h1 id="heading">Now You're Thinking With Ciphers</h1>
 	<div id="caesarsInput">
+
 		<h3 id="caesarsHead"> Caesar's Cipher </h3>
 		<input type="text" id="caesarsInputString" value="Input String to Encrypt" />
-		<br></br>
-		<input type="number" id="caesarsStep" value="3" min="0" max="26"/>
-		<button type="button" onclick="caesars()" id="caesarsEcode"> Encrypt </button>
+		<br />
+		<input type="number" id="caesarsStep" value="3" min="0" max="26" />
+		<button type="button" onclick="caesars()" id="caesarsEncode"> Encrypt </button>
 		<button type="button" onclick="caesarsDecrypt()" id="CeasersUndo"> Decrypt </button>
 
 	</div>
@@ -23,6 +26,23 @@
 		<p>
 			Below here is your coded message <br />
 			<div id="caesarsOutput"></div>
+		</p>
+	</div>
+
+	<div id="atBashInput">
+
+		<h3 id="atBashHead" atBash Cipher </h3>
+		<input type="text" id="atBashInput" value="Input a String to Encypt" />
+		<br />
+		<button type="button" onclick="atBashEncypt()" id="atBashEncode"> Encypt </button>
+
+	</div>
+
+	<div id="atBashOutputArea">
+		<p>
+			Below here is your coded message <br />
+			<div id="atBashOutput" </p>
+			</div>
 		</p>
 	</div>
 </BODY>
