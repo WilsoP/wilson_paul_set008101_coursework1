@@ -14,7 +14,7 @@
 	<div id="caesarsInput">
 
 		<h3 id="caesarsHead"> Caesar's Cipher </h3>
-		<input type="text" id="caesarsInputString" value="Input String to Encrypt" />
+		<input type="text" id="caesarsInputString" placeholder="Input String to Encrypt" />
 		<br />
 		<input type="number" id="caesarsStep" value="3" min="0" max="26" />
 		<button type="button" onclick="caesars()" id="caesarsEncode"> Encrypt </button>
@@ -29,13 +29,13 @@
 		</p>
 	</div>
 
-	<div id="atBashInput">
+	<div id="atBashInputArea">
 
 		<h3 id="atBashHead" atBash Cipher </h3>
-		<input type="text" id="atBashInput" value="Input a String to Encypt" />
+		<input type="text" id="atBashInput" placeholder="Input String to Encrypt" />
 		<br />
 		<button type="button" onclick="atBashEncypt()" id="atBashEncode"> Encypt </button>
-
+		<button type="button" onclick="atBashEncode()" id="atBashDecode"> Decrypt </button>
 	</div>
 
 	<div id="atBashOutputArea">
