@@ -70,12 +70,6 @@ function caesarsDecrypt() {
       var current = inputString[i];
       //you cant step a space
       if (current != " ") {
-        /*
-        Each letter has a value in JavaScript
-        i just have to simply increase the
-        number for both capital letters and
-        lowercase letters
-        */
         letterValue = inputString.charCodeAt(i);
         //checks if lower case
         if ((letterValue < 123) && (letterValue > 96)) {

@@ -1,3 +1,5 @@
+<!-- https://en.wikipedia.org/wiki/Tap_code -->
+
 <!DOCTYPE html>
 <HTML>
 
@@ -5,6 +7,8 @@
 	<TITLE> Thinking With Ciphers </TITLE>
 	<script type="text/javascript" src="Ceasers.js"></script>
 	<script type="text/javascript" src="atBash.js"></script>
+	<script type="text/javascript" src="tapCiper.js"></script>
+
 	<!-->
 	<link rel="stylesheet" href="Design.css"> </!-->
 </HEAD>
@@ -31,7 +35,7 @@
 
 	<div id="atBashInputArea">
 
-		<h3 id="atBashHead" atBash Cipher </h3>
+		<h3 id="atBashHead"> atBash Cipher </h3>
 		<input type="text" id="atBashInput" placeholder="Input String to Encrypt" />
 		<br />
 		<button type="button" onclick="atBashEncypt()" id="atBashEncode"> Encypt </button>
@@ -41,10 +45,26 @@
 	<div id="atBashOutputArea">
 		<p>
 			Below here is your coded message <br />
-			<div id="atBashOutput" </p>
-			</div>
+			<div id="atBashOutput"></div>
 		</p>
 	</div>
+
+	<div id="tapCipheInputArea">
+
+		<h3 id="tapCipherHead"> Tap Cipher </h3>
+		<input type="text" id="tapCipherInput" value="...../..-./.-..../....-./.....-..../..-" />
+		<br />
+		<button type="button" onclick="tapCipherEncode()"> Encrypt </button>
+		<button	type="button" onclick="tapCipherDecode()"> Decrypt </button>
+
+	</div>
+
+	<div id="tapCipherOutputArea">
+		<p>
+			Bellow here is your coded message <br />
+			<div id="tapCipherOutput"></div>
+		</p>
+
 </BODY>
 
 </HTML>
