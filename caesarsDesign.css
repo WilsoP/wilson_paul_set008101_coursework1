@@ -24,12 +24,12 @@
   color: rgb(255, 0, 0);
 }
 
-#homeScreenButton {
+#caesarsLaunch {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
 body {
   background-color: white;
-  font-family: "Times New Roman", Times, serif
+  font-family: "Times New Roman", Times, serif;
 }

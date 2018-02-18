@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<script type="text/javascript" src="Ceasers.js"></script>
+  <link rel="stylesheet" href="caesarsDesign.css">
+
+
+<head>
+
+    <div id="buttons">
+      <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
+  		<button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
+  		<button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+  		<button type="button" onclick="window.location='ThinkingWithCiphers.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
+</div>
+        <h1 id="heading"> Caesar's Cipher </h1>
+
+</head>
+
+<body>
+  <div id="caesarsInput">
+    <input type="text" id="caesarsInputString" placeholder="Input String to Encrypt" />
+    <br />
+    <input type="number" id="caesarsStep" value="3" min="0" max="26" />
+    <button type="button" onclick="caesars()" id="caesarsEncode"> Encrypt </button>
+    <button type="button" onclick="caesarsDecrypt()" id="CeasersUndo"> Decrypt </button>
+
+  </div>
+
+  <div id="caesarsOutputArea" class="outputArea">
+    <p>
+      Below here is your coded message <br />
+      <div id="caesarsOutput"></div>
+    </p>
+  </div>
+</body>
+
+
+</html>

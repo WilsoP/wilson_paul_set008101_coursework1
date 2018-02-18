@@ -1,70 +1,23 @@
-<!-- https://en.wikipedia.org/wiki/Tap_code -->
-
 <!DOCTYPE html>
+
 <HTML>
 
 <HEAD>
 	<TITLE> Thinking With Ciphers </TITLE>
-	<script type="text/javascript" src="Ceasers.js"></script>
-	<script type="text/javascript" src="atBash.js"></script>
-	<script type="text/javascript" src="tapCiper.js"></script>
 
-	<!-->
-	<link rel="stylesheet" href="Design.css"> </!-->
-</HEAD>
+	<link rel="stylesheet" href="Design.css">
 
-<BODY>
-	<h1 id="heading">Now You're Thinking With Ciphers</h1>
-	<div id="caesarsInput">
-
-		<h3 id="caesarsHead"> Caesar's Cipher </h3>
-		<input type="text" id="caesarsInputString" placeholder="Input String to Encrypt" />
-		<br />
-		<input type="number" id="caesarsStep" value="3" min="0" max="26" />
-		<button type="button" onclick="caesars()" id="caesarsEncode"> Encrypt </button>
-		<button type="button" onclick="caesarsDecrypt()" id="CeasersUndo"> Decrypt </button>
-
+	<div id="buttons">
+		<button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
+		<button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
+		<button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+		<button type="button" onclick="window.location='ThinkingWithCiphers.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
 	</div>
 
-	<div id="caesarsOutputArea" class="outputArea">
-		<p>
-			Below here is your coded message <br />
-			<div id="caesarsOutput"></div>
-		</p>
-	</div>
+		<h1 id="heading">Now You're Thinking With Ciphers</h1>
+</head>
 
-	<div id="atBashInputArea">
-
-		<h3 id="atBashHead"> atBash Cipher </h3>
-		<input type="text" id="atBashInput" placeholder="Input String to Encrypt" />
-		<br />
-		<button type="button" onclick="atBashEncypt()" id="atBashEncode"> Encypt </button>
-		<button type="button" onclick="atBashEncode()" id="atBashDecode"> Decrypt </button>
-	</div>
-
-	<div id="atBashOutputArea">
-		<p>
-			Below here is your coded message <br />
-			<div id="atBashOutput"></div>
-		</p>
-	</div>
-
-	<div id="tapCipheInputArea">
-
-		<h3 id="tapCipherHead"> Tap Cipher </h3>
-		<input type="text" id="tapCipherInput" value="...../..-./.-..../....-./.....-..../..-" />
-		<br />
-		<button type="button" onclick="tapCipherEncode()"> Encrypt </button>
-		<button	type="button" onclick="tapCipherDecode()"> Decrypt </button>
-
-	</div>
-
-	<div id="tapCipherOutputArea">
-		<p>
-			Bellow here is your coded message <br />
-			<div id="tapCipherOutput"></div>
-		</p>
-
-</BODY>
+	<BODY>
+	</BODY>
 
 </HTML>
