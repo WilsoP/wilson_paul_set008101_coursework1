@@ -14,7 +14,7 @@
   border: none;
   width: 25%;
   transition-duration: 0.4s;
-  float:left;
+  float: left;
   padding: 10px;
   cursor: pointer;
 }
@@ -29,17 +29,18 @@
   cursor: not-allowed;
 }
 
-.infoButton{
-  background-color:  rgb(223, 121, 37);
-  color:  white;
-  border: 0;;
+.infoButton {
+  background-color: rgb(223, 121, 37);
+  color: white;
+  margin-left: 25%;
+  border: 0;
   margin: 0;
   height: 20px;
-  padding-top: 0px;
-  transition-duration: 0.4s
-  cursor : pointer;
+  padding: 25px;
+  transition-duration: 0.4s cursor: pointer;
 }
-.infoButton span{
+
+.infoButton span {
   background-color: rgb(223, 121, 37);
   color: white;
   border: 1px solid rgb(223, 121, 37);
@@ -48,8 +49,18 @@
   position: relative;
   transition: 0.5s;
 }
+
+
+.CiphersInfo{
+  text-align: center;
+  padding-left: 20px;
+  background-color:  rgb(223, 121, 37);
+  color: white;
+  padding-bottom: 25px;
 }
-.infoButton span : after{
+
+
+.infoButton span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -58,20 +69,53 @@
   transition: 0.5s;
 }
 
-.infoButton:hover span{
+.infoButton:hover span {
   padding-right: 25px;
-
 }
-.infoButton:hover span::after{
+
+.infoButton:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-#welcome{
+#welcome {
+  padding: 50px;
   text-align: center;
-  background-color : white;
+  background-color: white;
   color: rgb(223, 121, 37);
   font-size: 40px;
+}
+
+.aboutTheWriter {
+  padding-top: 50px;
+  color: white;
+  background-color: rgb(223, 121, 37);
+  text-align: center;
+  padding-bottom: 68px;
+}
+
+#gitHub{
+  margin-left: 30%;
+}
+
+.socialMedia{
+  border: 0;
+  margin: 0;
+  color: rgb(223, 121, 37);
+  background-color: white;
+  padding: 10px;
+  width: 20%;
+  float: left;
+}
+
+.socialMedia:hover{
+  background-color: rgb(223, 121, 37);
+  color: white;
+  border: 1px solid white;
+}
+
+.buttonArea{
+  background-color: rgb(223, 121, 37);
 }
 body {
   background-color: white;
