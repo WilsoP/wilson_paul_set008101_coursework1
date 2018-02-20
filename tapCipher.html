@@ -3,36 +3,53 @@
 
 <head>
   <script type="text/javascript" src="tapCiper.js"></script>
-  	<link rel="stylesheet" href="tapDesign.css">
+  <link rel="stylesheet" href="tapDesign.css">
 
-  	<div id="buttons">
-      <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
-  		<button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
-  		<button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
-  		<button type="button" onclick="window.location='index.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
-</div>
-    <h1 id="heading"> Tap Cipher </h1>
+  <div id="buttons">
+    <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
+    <button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
+    <button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+    <button type="button" onclick="window.location='index.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
+  </div>
+  <h1 id="heading"> Tap Cipher </h1>
 </head>
 
 <body>
-<div id="encodeArea" class="stripe">
-  <div id="tapCipheInputArea">
+  <div id="encodeArea" class="stripe">
+    <div id="tapCipheInputArea">
 
-    <textarea id="tapCipherInput" placeholder="Text to Encode" cols="80"></textarea>
+      <textarea id="tapCipherInput" placeholder="Text to Encode" cols="80"></textarea>
+      <br />
+      <button type="button" onclick="tapCipherEncode()" id="tapCipherEncodeButton" class="encodeButtons"> Encrypt </button>
+      <button type="button" onclick="tapCipherDecode()" id="tapCipherDecodeButton" class="encodeButtons"> Decrypt </button>
+
+    </div>
+
+    <div id="tapCipherOutputArea">
+      <textarea id="tapCipherOutput" cols="80" placeholder="Text to be Decoded"></textarea>
+    </div>
+  </div>
+
+  <div id="dataArea" class="stripe2">
+    <h4 class="headings"> Current Usage </h4> The usage of the above code uses a "/" as the pause between grid references and a "-" to differenciate between words.
+    <br> There is also a space between words
+    <h3 class="headings"> The cipher </h3> Tap Cipher, or Knock Code, is a way to encode text messages in a simple way.
+    <br /> The tap code was often used by prisoners by banging metal bars or pipes against the wall.
+    <br /> Each letter is sent via tapping two numbers. The first telling us the row and the second telling us the column.
+    <br /> for example to "tap" the letter B the prisoner would tap once, pause then tap twice.
+    <br /> When you use this code in the real world, the letter "x" would be used to represent a new sentence
+    <br /> and the letter "k" to represent acknolwedgements
+    <h4 class="headings"> Design </h4> The code is designed based on a Polybius Square, wich is a 5x5 grid of letters.
+    <br /> Each character in the latin alphabet is represented except from "k" which shares it's spot with "c"
+    <br /> The message is sent via taps or knock sounds against the wall.
+    <h4 class="headings"> The need for the code </h4> The tap code is most often used by prisoners over morse code due to the complexity of morse code.
+    <br /> For the prisoner the use of morse code causes s difficulty as it required two seperate sounds.
+    <br /> a "dot" and a "dash". Tap code is just a dot.
+    <br /> Further a morse code novice also would probably require a cheat sheet until they have learned the code
     <br />
-    <button type="button" onclick="tapCipherEncode()" id="tapCipherEncodeButton"class="encodeButtons"> Encrypt </button>
-    <button type="button" onclick="tapCipherDecode()" id="tapCipherDecodeButton"class="encodeButtons"> Decrypt </button>
+
 
   </div>
-
-  <div id="tapCipherOutputArea">
-    <textarea id="tapCipherOutput" cols="80" placeholder="Text to be Decoded"></textarea>
-  </div>
-</div>
-
-<div id="dataArea" class="stripe2">
-
-</div>
 
 </body>
 
