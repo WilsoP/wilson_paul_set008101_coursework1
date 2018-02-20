@@ -1,5 +1,5 @@
 #heading {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(223, 121, 37);
   color: white;
   margin-top: 0;
   margin-left: 0;
@@ -9,19 +9,19 @@
 }
 
 .topRowButtons {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(223, 121, 37);
   color: white;
   border: none;
   width: 25%;
   transition-duration: 0.4s;
   float:left;
   padding: 10px;
-
+  cursor: pointer;
 }
 
 .topRowButtons:hover {
   background-color: white;
-  color: rgb(255, 0, 0);
+  color: rgb(223, 121, 37);
 }
 
 #homeScreenButton {
@@ -29,7 +29,52 @@
   cursor: not-allowed;
 }
 
+.infoButton{
+  background-color:  rgb(223, 121, 37);
+  color:  white;
+  border: 0;;
+  margin: 0;
+  height: 20px;
+  padding-top: 0px;
+  transition-duration: 0.4s
+  cursor : pointer;
+}
+.infoButton span{
+  background-color: rgb(223, 121, 37);
+  color: white;
+  border: 1px solid rgb(223, 121, 37);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+}
+.infoButton span : after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.infoButton:hover span{
+  padding-right: 25px;
+
+}
+.infoButton:hover span::after{
+  opacity: 1;
+  right: 0;
+}
+
+#welcome{
+  text-align: center;
+  background-color : white;
+  color: rgb(223, 121, 37);
+  font-size: 40px;
+}
 body {
   background-color: white;
+  margin: 0;
   font-family: "Times New Roman", Times, serif
 }

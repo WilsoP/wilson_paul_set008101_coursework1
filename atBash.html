@@ -3,34 +3,36 @@
 
 <head>
   <script type="text/javascript" src="atBash.js"></script>
+  <link rel="stylesheet" href="atBashDesign.css">
 
-  	<link rel="stylesheet" href="atBashDesign.css">
+  <div id="buttons">
+    <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
+    <button type="button" onclick="window.location='atBash.HTML'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
+    <button type="button" onclick="window.location='tapCipher.HTML'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+    <button type="button" onclick="window.location='index.HTML'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
+  </div>
 
-  	<div id="buttons">
-      <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
-  		<button type="button" onclick="window.location='atBash.HTML'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
-  		<button type="button" onclick="window.location='tapCipher.HTML'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
-  		<button type="button" onclick="window.location='ThinkingWithCiphers.HTML'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
-	</div>
-
-      <h1 id="heading"> atBash Cipher </h1>
+  <h1 id="heading"> atBash Cipher </h1>
 </head>
 
 <body>
-  <div id="atBashInputArea">
+  <div id="encodeArea" class="stripe">
+    <div id="atBashInputArea">
 
-    <input type="text" id="atBashInput" placeholder="Input String to Encrypt" />
-    <br />
-    <button type="button" onclick="atBashEncypt()" id="atBashEncode"> Encypt </button>
-    <button type="button" onclick="atBashEncode()" id="atBashDecode"> Decrypt </button>
+      <textarea id="atBashInput" cols="80" placeholder="Text to be Encoded" class="textAreas"></textarea>
+      <br />
+      <button type="button" onclick="atBashEncypt()" id="atBashEncode" class="encodeButtons"> Encypt </button>
+      <button type="button" onclick="atBashDecode()" id="atBashDecode" class="encodeButtons"> Decrypt </button>
+    </div>
+
+    <div id="atBashOutputArea">
+      <textarea id="atBashOutput" cols="80" placeholder="Text to be Decoded" class="textAreas"></textarea>
+    </div>
   </div>
 
-  <div id="atBashOutputArea">
-    <p>
-      Below here is your coded message <br />
-      <div id="atBashOutput"></div>
-    </p>
+  <div class="stripe2" id="dataArea">
   </div>
+
 </body>
 
 </html>

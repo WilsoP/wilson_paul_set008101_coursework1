@@ -9,28 +9,31 @@
       <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
   		<button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
   		<button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
-  		<button type="button" onclick="window.location='ThinkingWithCiphers.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
+  		<button type="button" onclick="window.location='index.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
 </div>
-
     <h1 id="heading"> Tap Cipher </h1>
 </head>
 
 <body>
+<div id="encodeArea" class="stripe">
   <div id="tapCipheInputArea">
 
-    <input type="text" id="tapCipherInput" placeholder="Input value to encode" />
+    <textarea id="tapCipherInput" placeholder="Text to Encode" cols="80"></textarea>
     <br />
-    <button type="button" onclick="tapCipherEncode()"> Encrypt </button>
-    <button type="button" onclick="tapCipherDecode()"> Decrypt </button>
+    <button type="button" onclick="tapCipherEncode()" id="tapCipherEncodeButton"class="encodeButtons"> Encrypt </button>
+    <button type="button" onclick="tapCipherDecode()" id="tapCipherDecodeButton"class="encodeButtons"> Decrypt </button>
 
   </div>
 
   <div id="tapCipherOutputArea">
-    <p>
-      Bellow here is your coded message <br />
-      <div id="tapCipherOutput"></div>
-    </p>
+    <textarea id="tapCipherOutput" cols="80" placeholder="Text to be Decoded"></textarea>
   </div>
+</div>
+
+<div id="dataArea" class="stripe2">
+
+</div>
+
 </body>
 
 </html>

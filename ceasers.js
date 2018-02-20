@@ -52,7 +52,7 @@ function caesars() {
     console.log(outputString);
 
   }
-  document.getElementById('caesarsOutput').innerHTML = outputString;
+  document.getElementById('ceasersOutput').value = outputString;
 }
 
 
@@ -60,7 +60,7 @@ function caesars() {
 function caesarsDecrypt() {
   //initialise each variable
   var outputString = [];
-  var inputString = document.getElementById('caesarsInputString').value;
+  var inputString = document.getElementById('ceasersOutput').value;
   var stepAmount = parseInt(document.getElementById('caesarsStep').value);
   var letterValue = 0;
   //checks the user isnt trying to step too far
@@ -105,5 +105,5 @@ function caesarsDecrypt() {
     console.log(outputString);
 
   }
-  document.getElementById('caesarsOutput').innerHTML = outputString;
+  document.getElementById('caesarsInputString').value = outputString;
 }

@@ -34,11 +34,11 @@ function tapCipherEncode() {
         }
         outputString += "-"
       }
-    } else {
+    } else if (current == " ") {
       outputString += " ";
     }
 
-    document.getElementById('tapCipherOutput').innerHTML = outputString;
+    document.getElementById('tapCipherOutput').value = outputString;
 
     //k = 11
 
@@ -48,7 +48,7 @@ function tapCipherEncode() {
 function tapCipherDecode() {
   var outputString = [];
   var outputGrid = "";
-  var inputString = document.getElementById('tapCipherInput').value;
+  var inputString = document.getElementById('tapCipherOutput').value;
   var letterValue = 0;
   var taps = ["1,1", "1,2", "1,3", "1,4", "1,5", "2,1", "2,2", "2,3", "2,4", "2,5", "3,1", "3,2", "3,3",
     "3,4", "3,5", "4,1", "4,2", "4,3", "4,4", "4,5", "5,1", "5,2", "5,3", "5,4", "5,5"
@@ -60,36 +60,62 @@ function tapCipherDecode() {
   var counter = 0;
   var searchValue = 0;
 
-
+  //loops through each
   for (var i = 0; i < inputString.length; i++) {
     var current = inputString[i];
+    //checks if a space
     if (current != " ") {
+      //if a dot then increase counter by 1
       if (current == ".") {
         counter++;
-      } else if (current == "-") {
-        afterCount = counter;
-        counter = 0;
-        searchValue = beforeCount + "," + afterCount;
-        console.log(searchValue);
-        for (var j = 0; j < taps.length; j ++){
-          if (taps[j] == searchValue){
-            letterValue = j
-            if (letterValue == 2){
-              outputString += "c/k";
-            }else if(letterValue > 10){
-              letterValue ++;
-            }
-            letterValue = letterValue + 97;
-            outputString += String.fromCharCode(letterValue);
-            console.log(outputString);
+        /*
+         a / indicates a pause so change previous
+         dots to a variable to count before
+        */
 
-          }
-        }
-      } else  if (current == "/") {
+      } else if (current == "/") {
         beforeCount = counter;
         counter = 0;
-      }
+        /*
+          a - indicates a new letter in the cipher
+          use the before counte and the after counter
+          to decide the letter
+        */
+      } else if (current == "-") {
+
+        afterCount = counter;
+        counter = 0;
+        //create the grid reference for the new character
+        searchValue = beforeCount + "," + afterCount;
+        console.log(searchValue);
+        /*
+          loops through each character in the taps array
+          and compares it to the search value made above
+        */
+        for (var j = 0; j < taps.length; j++) {
+          if (taps[j] == searchValue) {
+            letterValue = j
+            if ((letterValue != 2) && (letterValue != 10)) {
+              if (letterValue > 10) {
+                letterValue++;
+              }
+              letterValue = letterValue + 97;
+              outputString += String.fromCharCode(letterValue);
+              console.log(outputString);
+              /*
+              as the letter c and k are not differenciated
+              in this cipher I simply output them as the same thing
+              */
+            } else if ((letterValue == 2) || (letterValue == 10)) {
+              outputString += "c/k";
+            }
+          } //taps == search value
+        } //taps for loop
+      } //new letter if
+    } else if (current == " ") {
+      outputString += " ";
     }
-  }//for
-  document.getElementById('tapCipherOutput').innerHTML = outputString;
-}//function
+
+  } //for
+  document.getElementById('tapCipherInput').value = outputString;
+} //function
