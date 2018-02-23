@@ -12,7 +12,7 @@ function atBashEncypt() {
   for (var i = 0; i < inputString.length; i++) {
     var current = inputString[i];
     if (current != " ") {
-      letterValue = inputString.charCodeAt(i); {
+      letterValue = inputString.charCodeAt(i);
         //changes lowercase values
         if ((letterValue < 123) && (letterValue > 96)) {
           //sets the character to a it's position in the alphabet
@@ -33,7 +33,7 @@ function atBashEncypt() {
         }else{
           outputString += current;
         }
-      }
+
     } else {
       outputString += current;
     }
