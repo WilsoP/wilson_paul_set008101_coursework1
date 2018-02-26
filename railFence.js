@@ -56,27 +56,7 @@ function railfenceDecode() {
     if (current != " ") {
       letterValue= inputString.charCodeAt(i);
       if ((letterValue < 91) && (letterValue > 64)) {
-        counter++
-        console.log(counter);
-        if (counter == 1) {
-          tempOutFirst += current;
-          tempOutFirst += "..."
-        }
-        if (counter == 2){
-          tempOutSecond += ".";
-          tempOutSecond+= current;
-        }
-        if (counter == 3) {
-          tempOutThird +="..";
-          tempOutThird +=current;
-          tempOutThird += ".";
-        }
-        if (counter == 4) {
-          tempOutSecond += ".";
-          tempOutSecond += current;
-          counter = 0;
 
-        }
       }
     }
   }

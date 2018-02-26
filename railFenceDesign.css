@@ -24,23 +24,20 @@
   color: rgb(223, 121, 37);
 }
 
-#caesarsLaunch {
+#railFenceLaunch {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
 
 .stripe {
-  height: 300px;
   background-color: white;
   color :rgb(223, 121, 37);
-  text-align: center;
 }
 
 .stripe2 {
   background-color: rgb(223, 121, 37);
   color : white;
-  text-align: center;
 
 }
 
@@ -49,7 +46,7 @@
   background-color:  rgb(223, 121, 37);
   color:  white;
   border: 0;
-  width:22.5%;
+  width:25%;
   margin: 0;
   padding-top: 0px;
   transition-duration: 0.4s
@@ -62,7 +59,7 @@
 }
 
 .textAreas{
-  width: 50%;
+  width: 50.25%;
   height: 100px;
   margin-left: 25%;
   resize: none;
@@ -71,31 +68,17 @@
 
 }
 
-#caesarsEncode{
+#railfenceEncode{
   margin-left: 25%
 }
 
-#caesarsStep{
-  height: 47.5px;
-  text-align: center;
-  width : 5%;
-  background-color:  rgb(223, 121, 37);
-  color:  white;
-  transition-duration: 0.4s;
-  border:none;
-}
-
-#caesarsStep:hover{
-  background-color: white;
-  color: rgb(223, 121, 37);
-  border: 1px solid rgb(223, 121, 37);
-}
-
-.stripe2{
+#dataArea{
   font-size: 20px;
-  text-align: center;
   padding: 30px;
+  text-align: center;
+
 }
+
 
 .headings{
   text-decoration: underline;
@@ -104,6 +87,6 @@
 
 body {
   background-color: white;
-  font-family: "Times New Roman", Times, serif;
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }

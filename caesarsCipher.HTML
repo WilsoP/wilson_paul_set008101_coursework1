@@ -9,6 +9,7 @@
     <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
     <button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
     <button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+    <button type="button" onclick="window.location='railFence.html'" id="railFenceLaunch" class="topRowButtons"> Rail Fence Cipheer </button>
     <button type="button" onclick="window.location='index.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
   </div>
   <h1 id="heading"> Caesar's Cipher </h1>
@@ -21,7 +22,7 @@
       <textarea id="caesarsInputString" placeholder="Input String to Encrypt" class="textAreas"></textarea>
       <br />
       <button type="button" onclick="caesars()" id="caesarsEncode" class="encodeButtons"> Encrypt </button>
-      <input type="number" id="caesarsStep" value="3" min="0" max="26"/>
+      <input type="number" id="caesarsStep" value="3" min="0" max="26" />
       <button type="button" onclick="caesarsDecrypt()" id="CaesersUndo" class="encodeButtons"> Decrypt </button>
 
     </div>
@@ -30,28 +31,22 @@
       <textarea id="ceasersOutput" placeholder="Input String to Decrypt" class="textAreas"></textarea>
     </div>
   </div>
-  <div  id="dataArea"class="stripe2">
-      <p>
-        Caesars Cipher, also known as Caesars Shift, Shift Cipher or Caesars Code,
-      </br >
-        is one of the most well known encrytion methods. It is a "plain text" substituion Cipher
+  <div id="dataArea" class="stripe2">
+    <p>
+      Caesars Cipher, also known as Caesars Shift, Shift Cipher or Caesars Code,
+      </br>
+      is one of the most well known encrytion methods. It is a "plain text" substituion Cipher
+      <br /> it works by shifting letters along the alphabet by a user inputted step amount.
       <br />
-        it works by shifting letters along the alphabet by a user inputted step amount.
+      <br /> It is unknown how successfull the cipher actually was at the time however currently the cipher has no communication security
       <br />
+      <br /> The cipher is named such as it was recorded first being used by the Roman Empiror Julius Caesar.
       <br />
-        It is unknown how successfull the cipher actually was at the time however currently the cipher has no communication security
+      <br /> The cipher has been used to create children's toy made out of 2 rotating disks to encypt and decrypt the code
       <br />
-      <br />
-        The cipher is named such as it was recorded first being used by the Roman Empiror Julius Caesar.
-      <br />
-      <br />
-        The cipher has been used to create children's toy made out of 2 rotating disks to encypt and decrypt the code
-      <br />
-      <br />
-        Although a basic cipher it was still being used in 1915 by the Russian army.
-      <br />
-        You could say, they are not russian' around to get new encryption methods.
-      </p>
+      <br /> Although a basic cipher it was still being used in 1915 by the Russian army.
+      <br /> You could say, they are not russian' around to get new encryption methods.
+    </p>
   </div>
 </body>
 

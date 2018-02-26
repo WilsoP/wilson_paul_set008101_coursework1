@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <div id="buttons">
+    <link rel="stylesheet" href="Design.css">
+    <link rel="stylesheet" href="caesarsDesign.css">
+    <button type="button" class="topRowButtons"> Top </button>
+    <button type="button" class="topRowButtons"> Row </button>
+    <button type="button" class="topRowButtons"> Nav </button>
+    <button type="button" class="topRowButtons"> Bar </button>
+    <button type="button" class="topRowButtons"> Buttons </button>
+  </div>
+  <h1 id="heading"> Heading Area</h1>
+  <div class="stripe">
+    This is a div.
+    <br /> It has the folowing properties
+    <br /> .stripe {
+    <br /> background-color: white;
+    <br /> height: 300px;
+    <br /> color :rgb(223, 121, 37);
+    <br /> text-align : center;
+    <br /> }
+    <br />This sets the background colour to be white,
+    <br /> the text color to be orange,
+    <br /> and the aignment of the text to be central.
+
+  </div>
+
+  <div class="stripe2">
+    this is also a div with the following details
+
+    <br /> .stripe2 {
+    <br /> background-color: rgb(223, 121, 37);
+    <br /> color : white; }
+  </div>
+
+
+  <button type="button" class="infoButton"><span> Fancy Button </span>
+  </button>
+  <br />
+  <textarea placeholder="This is a text area" class="textAreas"></textarea>
+  <br />
+  <button type="button" id="caesarsEncode" class="encodeButtons"> Button2 </button>
+  <br />
+  <br />
+  <br />
+  <br /> The heading has the following properties
+  <br />#heading {
+  <br /> background-color: rgb(223, 121, 37);
+  <br /> color: white;
+  <br /> margin-top: 0;
+  <br /> margin-left: 0;
+  <br /> padding: 25px;
+  <br /> text-align: center;
+  <br /> vertical-align: middle;
+  <br /> }
+  <br />This means that the header is sentered alinged, has a font colour of white and a background colour of orange.
+  <br />the margin area makes there be no white space around the heading and a padding of 24px all the way around the text.
+  <br />
+  <br /> The top row nav bar button all have the following information
+  <br /> .topRowButtons {
+  <br /> background-color: rgb(223, 121, 37);
+  <br /> color: white;
+  <br /> border: none;
+  <br /> width: 20%;
+  <br /> transition-duration: 0.4s;
+  <br /> float:left;
+  <br /> padding: 10px;
+  <br />}
+  <br />
+  <br />.topRowButtons:hover {
+  <br /> background-color: white;
+  <br /> color: rgb(223, 121, 37);
+  <br /> }
+  <br />
+  <br />This means that the buttons each are 20% of the width of the page and change colour to the inverse of the header.
+  <br />The buttons share a colour scheme with the heading and float off of the button to the left.
+  <br />
+  <br />The fancy button has the properties
+  <br />
+  <br />.infoButton span {
+  <br /> background-color: rgb(223, 121, 37);
+  <br /> color: white;
+  <br /> border: 1px solid rgb(223, 121, 37);
+  <br /> cursor: pointer;
+  <br /> display: inline-block;
+  <br /> position: relative;
+  <br /> transition: 0.5s;
+  <br /> }
+  <br />
+  <br />
+  <br />.CiphersInfo{
+  <br /> text-align: center;
+  <br /> padding-left: 20px;
+  <br /> background-color: rgb(223, 121, 37);
+  <br />color: white;
+  <br /> padding-bottom: 25px;
+  <br /> }
+  <br />
+  <br />
+  <br /> .infoButton span:after {
+  <br /> content: '\00bb';
+  <br /> position: absolute;
+  <br /> opacity: 0;
+  <br /> top: 0;
+  <br /> right: -20px;
+  <br /> transition: 0.5s;
+  <br /> }
+  <br />
+  <br /> .infoButton:hover span {
+  <br /> padding-right: 25px;
+  <br /> }
+  <br />
+  <br /> .infoButton:hover span:after {
+  <br /> opacity: 1;
+  <br /> right: 0;
+  <br />}
+  <br />
+  <br />This means that when the user hovers over the button it expands and shows ">>" after the text in the button.
+  <br />
+  <br />
+  <br />The text areas have the following properties
+  <br />
+  <br /> .textAreas{
+  <br /> width: 50%;
+  <br /> height: 100px;
+  <br /> margin-left: 25%;
+  <br /> resize: none;
+  <br /> margin-top: 10px;
+  <br /> margin-bottom: 10px;
+  <br /> }
+  <br />
+  <br /> Which simply has the correct sizing.
+  <br />
+  <br /> The button marked "button 2" has the following properties:
+  <br />.encodeButtons {
+  <br /> height: 50px;
+  <br /> background-color: rgb(223, 121, 37);
+  <br /> color: white;
+  <br /> border: 0;
+  <br /> width:22.5%;
+  <br /> margin: 0;
+  <br /> padding-top: 0px;
+  <br /> transition-duration: 0.4s
+  <br />}
+  <br />
+  <br />.encodeButtons:hover{
+  <br /> background-color: white;
+  <br /> color: rgb(223, 121, 37);
+  <br /> border: 1px solid rgb(223, 121, 37);
+  <br />}
+  <br />
+  <br />This shows that the button gets a border around them and inverts like the nav bar button.
+  <br />

@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
 <script type="text/javascript" src="railFence.js"></script>
+<link rel="stylesheet" href="railFenceDesign.css">
 
 <head>
-<title> Rail Fence Cipher </title>
+  <title> Rail Fence Cipher </title>
+  <div id="buttons">
+    <button type="button" onclick="window.location='caesarsCipher.html'" id="caesarsLaunch" class="topRowButtons"> Ceasers Cipher </button>
+    <button type="button" onclick="window.location='atBash.html'" id="atBashLaunch" class="topRowButtons"> atBash Cipher </button>
+    <button type="button" onclick="window.location='tapCipher.html'" id="tapCiperLaunch" class="topRowButtons"> Tap Cipher </button>
+    <button type="button" onclick="window.location='railFence.html'" id="railFenceLaunch" class="topRowButtons"> Rail Fence Cipheer </button>
+    <button type="button" onclick="window.location='index.html'" id="homeScreenButton" class="topRowButtons"> Main Menu </button>
+  </div>
+  <h1 id="heading"> Rail Fence Cipher </h1>
+
 </head>
 
 <body>
   <div id="stripe">
-    <textarea id="railFenceInput" value="railFence" class="textArea"></textarea>
-    <button type="button" onclick="railfenceEncode()" class="encodeButtons"> Encypt </button>
+    <textarea id="railFenceInput" value="railFence" placeholder="Please enter text to be encoded" class="textAreas"></textarea>
+    <button type="button" onclick="railfenceEncode()" class="encodeButtons" id="railfenceEncode"> Encypt </button>
     <button type="button" onclick="railfenceDecode()" class="encodeButtons"> Decrypt </button>
-    <textarea id="railFenceOutput" value="railFence" class="textArea"></textarea>
+    <textarea id="railFenceOutput" value="railFence" placeholder="Please enter text to be decoded" class="textAreas"></textarea>
+
+    <div id="dataArea" class="stripe2">
+      <p>
+        <h4> Note </h4> This cipher does not currently decode, sorry
+        <br /> ¯\_(ツ)_/¯
+        <h4> The Cipher </h4> The Rail Fence Cipher is a transposition cipher.
+        <br />It rearranges the plaintext letters by drawing them in a way that they form a shape of the rails of an imaginary fence.
+        <br />The Rail Fence Cipher was invented in ancient times.
+        <br />
+        <br />It was used by the Greeks, who created a special tool, called scytale, to make message encryption and decryption easier.
+        <br />Currently, it is usually used with a piece of paper.
+        <br />
+        <br />The letters are arranged in a way which is similar to the shape of the top edge of the rail fence.
+
+      </p>
+    </div>
 </body>
 
 </html>
