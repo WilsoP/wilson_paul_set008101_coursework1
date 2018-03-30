@@ -101,7 +101,6 @@ function tapCipherDecode() {
               }
               letterValue = letterValue + 97;
               outputString += String.fromCharCode(letterValue);
-              console.log(outputString);
               /*
               as the letter c and k are not differenciated
               in this cipher I simply output them as the same thing
