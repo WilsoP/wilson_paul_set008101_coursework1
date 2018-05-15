@@ -63,13 +63,13 @@ function tapCipherDecode() {
   //loops through each
   for (var i = 0; i < inputString.length; i++) {
     var current = inputString[i];
-    //checks if a space
+    //checks if a not space
     if (current != " ") {
       //if a dot then increase counter by 1
       if (current == ".") {
         counter++;
         /*
-         a / indicates a pause so change previous
+         a '/' indicates a pause so change previous
          dots to a variable to count before
         */
 
@@ -95,8 +95,8 @@ function tapCipherDecode() {
         for (var j = 0; j < taps.length; j++) {
           if (taps[j] == searchValue) {
             letterValue = j
-            if ((letterValue != 2) && (letterValue != 10)) {
-              if (letterValue > 10) {
+            if (letterValue != 2) {
+              if (letterValue > 9) {
                 letterValue++;
               }
               letterValue = letterValue + 97;
@@ -105,7 +105,7 @@ function tapCipherDecode() {
               as the letter c and k are not differenciated
               in this cipher I simply output them as the same thing
               */
-            } else if ((letterValue == 2) || (letterValue == 10)) {
+            } else if (letterValue == 2) {
               outputString += "c/k";
             }
           } //taps == search value
